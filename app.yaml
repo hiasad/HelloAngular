@@ -2,3 +2,7 @@ runtime: nodejs14
 env: standard
 env_variables:
   port: '4800'
+handlers:
+  - url: /(.*)
+    static_files: dist/angular-hello-world/index.html
+    upload: dist/angular-hello-world/index.html
